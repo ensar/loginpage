@@ -1,0 +1,125 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{width:100%;}
+
+.container{
+    width:70%;
+    height:75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    justify-content: space-around;
+    box-shadow: 12px 12px  2px rgb(214, 210, 210);
+    animation: down 1.1s ease-in-out;
+  
+}
+.content{
+    width: 50%;
+    height:100%;
+    background:linear-gradient(to bottom,rgb(233, 34, 233),rgb(201, 132, 201));
+    border-radius: 1rem 0 0 1rem;
+    padding:90px 45px;
+    z-index: 2;
+
+}
+.content>h1{
+    color:rgba(255, 255, 255, 0.884);
+    padding-bottom:45px;
+    font-size:3rem;
+    font-weight:650;
+}
+
+.content>p{
+    color:rgb(164, 247, 226);
+    line-height: 30px;
+}
+.login-container{
+    width:50%;
+    height:100%;
+    z-index: 5;
+    padding:50px 45px;
+    text-align: center;
+    background:rgb(233, 231, 231); 
+    border-radius: 0 1rem 1rem 0;
+    position: relative;
+}
+.login-container>h1{
+   color:rgb(233, 34, 233);
+    font-size:2rem;
+    padding-bottom:18px;
+}
+.box{
+    padding-bottom: 10px;
+    position: relative;
+    
+
+}
+input{
+    border-radius: 0.8rem;
+    width: 90%;
+    height: 50px;
+    border:2px solid rgb(104, 22, 104);
+    outline:none;
+    text-align:center;
+    font-size: 18px;
+}
+img{
+    position: absolute;
+    left:30px;
+    top:-10px;
+    background:transparent;
+    width: 20px;
+    height: auto;}
+
+    .forgot{
+        position: absolute;
+        left:70px;
+        
+    }
+
+    .forgot>a{
+        text-decoration: none;
+        color:rgb(117, 58, 117);
+        font-size: 18px;   
+    }
+    .button{
+        margin:40px 40px 40px 90px;
+
+    }
+    button{
+        padding:20px;
+        width:85%;
+        height:38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:linear-gradient(to bottom,rgb(233, 34, 233),rgb(201, 132, 201));
+        border:none;
+        outline: none;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 1rem;
+        cursor: pointer;
+        
+    }
+    @keyframes down{
+        0%{opacity:0; margin-top: -80px;}
+        100%{opacity:1; margin-top: 0;}
+    }
+    .new a{
+        text-decoration: none;
+    }
+
+    @media screen and (max-width:762px){
+        .content{display: none;}
+        .login-container{width: 100%;}
+    }
+
+
+    
+    
